@@ -2,7 +2,10 @@
 title: "The Jets and the Sharks: An Interactive Activation and Competition (IAC) Model "
 author: "Anthony Miceli"
 date: "July 1, 2019"
-output: html_document
+output: 
+  html_document:
+    keep_md: true
+
 ---
 
 ## General Overview
