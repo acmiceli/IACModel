@@ -2,7 +2,8 @@
 title: "The Jets and the Sharks: An Interactive Activation and Competition (IAC) Model "
 output: 
   html_document:
-    keep_md: true
+    keep_md: true 
+
 ---
 
 ## General Overview
@@ -15,21 +16,19 @@ The network consists of units organized into pools. Each unit is connected to ev
 
 Here is a diagram of the network: 
 
-<p align='center'>
 ![a1](images/jetsdiagram1.png)
-</p>
 
 For more details about this model, both in general and more specifically, see the [PDP Handbook](https://web.stanford.edu/group/pdplab/pdphandbook/handbookch3.html#x7-190002). 
 
-<br>
+ 
 
 ## Contents
 
-+ Network parameters are set [here](#parameters)
-+ Network-pertinent functions are defined [here](#functions)
-+ Weighted connections between units are set [here](#connections)
-+ Pools are defined [here](#definepools)
-+ Skip to a worked example [here](#example1). 
++ Network parameters are set [here](#set-parameters)
++ Network-pertinent functions are defined [here](#define-functions)
++ Weighted connections between units are set [here](#set-weighted-connections)
++ Pools are defined [here](#define-pools-in-network)
++ Skip to a worked example [here](#iac-in-action:-knowledge-retrieval-by-content-and-by-name). 
 
 
 ## The Code
@@ -65,7 +64,7 @@ library(knitr)
 library(kableExtra)
 ```
 
-#### Set parameters {#parameters}
+#### Set parameters
 
 ```r
 # set parameters
@@ -83,7 +82,7 @@ gamma <- 0.1
 ncycles <- 100
 ```
 
-#### Define functions {#functions}
+#### Define functions
 
 ##### Funtion: pool
 
@@ -252,7 +251,7 @@ return(list('features' = f_df, 'names' = n_df, 'hidden' = h_df))
 }
 ```
 
-#### Set weighted connections {#connections}
+#### Set weighted connections
 
 ##### Features to features weights
 
@@ -309,7 +308,7 @@ n2H <- diag(1, nrow = 27, ncol = 27)
 h2H <- n2N # same as n2N
 ```
 
-### Define pools in network {#definepools}
+### Define pools in network
 Here we define three pools: a features pool, a names pool and a hidden pool. 
 
 
@@ -338,7 +337,7 @@ hiddenPool <- pool(3, "hidden", "hidden", 27,
                  weights = list('1'=t(f2H), '2'=t(n2H), '3'=h2H))
 ```
 
-# IAC in Action: Knowledge Retrieval by Content and by Name {#example1}
+# IAC in Action: Knowledge Retrieval by Content and by Name
 
 Imagine that you know the following individuals (see Jets and Sharks table below) - what they do for work, their level of education, how old they are, whether or not they are married or single, and what group they belong to. 
 
@@ -594,7 +593,11 @@ Let's take a look at hidden unit, and feature unit activations over time (i.e., 
 
 
 
-![](JetsAndSharks_files/figure-html/plot activations of each pool over time-1.png)<!-- -->![](JetsAndSharks_files/figure-html/plot activations of each pool over time-2.png)<!-- -->
+![](JetsAndSharks_files/figure-html/plot1-1.png)<!-- -->
+
+![](JetsAndSharks_files/figure-html/plot1a-1.png)<!-- -->
+
+
 
 As expected, we see that the units corresponding to Jim, John, Lance and George do have the highest activation levels in the hidden pool. 
 
@@ -797,7 +800,7 @@ Let's take a look at feature units activation over time to see what characterist
 
 
 
-![](JetsAndSharks_files/figure-html/ex2: plot activations of each pool over time-1.png)<!-- -->
+![](JetsAndSharks_files/figure-html/plot2-1.png)<!-- -->
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
