@@ -1,11 +1,8 @@
 ---
 title: "The Jets and the Sharks: An Interactive Activation and Competition (IAC) Model "
-author: "Anthony Miceli"
-date: "July 1, 2019"
 output: 
   html_document:
     keep_md: true
-
 ---
 
 ## General Overview
@@ -19,7 +16,7 @@ The network consists of units organized into pools. Each unit is connected to ev
 Here is a diagram of the network: 
 
 <p align='center'>
-![](images/jetsdiagram1.png)
+![a1](images/jetsdiagram1.png)
 </p>
 
 For more details about this model, both in general and more specifically, see the [PDP Handbook](https://web.stanford.edu/group/pdplab/pdphandbook/handbookch3.html#x7-190002). 
