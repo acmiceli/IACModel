@@ -1,8 +1,8 @@
 # The Jets and the Sharks: An Interactive Activation and Competition (IAC) Model
 
 ## General Overview
-
-The present works provides a demonstration in R of an Interactive Activation and Competition (IAC) model. Models such as this one stem from the parallel-distributed processing (PDP) tradition and can offer a mechanistic, biologically plausible account of psychological phenomena at an algorithmic level. The Jets and the Sharks model, here, provides a window into how knowledge retrieval might work.
+ in 
+The present work provides an example of an Interactive Activation and Competition (IAC) model in action. Models such as this stem from the parallel-distributed processing (PDP) tradition and can offer mechanistic, biologically plausible accounts of psychological phenomena at an algorithmic level. The Jets and the Sharks model, here, provides a window into how knowledge retrieval might work.
 
 ## The Network
 
