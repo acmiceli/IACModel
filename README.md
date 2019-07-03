@@ -1,10 +1,4 @@
----
-title: "The Jets and the Sharks: An Interactive Activation and Competition (IAC) Model "
-output: 
-  html_document:
-    keep_md: true 
-
----
+# The Jets and the Sharks: An Interactive Activation and Competition (IAC) Model
 
 ## General Overview
 
