@@ -6,16 +6,18 @@ The present work provides an example of an Interactive Activation and Competitio
 
 ## The Network
 
-The network consists of units organized into pools. Each unit is connected to every other unit. Between pools, connections are bidirectionally excitatory, and within pools units are bidirectionally inhibitory. Strength of connection between units correspond to likely co-occurence of activation between units. Activation is the only currency of the network.
+The network consists of units organized into pools. Each unit is connected to every other unit. Between pools, units are bi-directionally excitatory, and within pools units are bidirectionally inhibitory. The strength of the weighted connections between units reflects the co-occurence of features in the real world. Activation is the only currency of the network.
 
-Here is a diagram of the network: 
+Here's a diagram of the network: 
 
 ![a1](images/jetsdiagram1.png)
 
+The figure presents a partial depiction of units and connections in the network. For example, we see that the unit Rick is connected via conjunction to the units corresponding to the features of burglar, 30s, divorced and high school. 
+
 For more details about this model, both in general and more specifically, see the [PDP Handbook](https://web.stanford.edu/group/pdplab/pdphandbook/handbookch3.html#x7-190002). 
 
+Below, I present an implementation of the Jets and the Sharks network in R, with some worked examples that demonstrate the inner workings of this IAC network.
  
-
 ## Contents
 
 + Network parameters are set [here](#set-parameters)
