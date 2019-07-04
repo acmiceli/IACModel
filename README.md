@@ -24,7 +24,7 @@ For more details about this model, see the [PDP Handbook](https://web.stanford.e
 + Network-pertinent functions are defined [here](#define-functions)
 + Weighted connections between units are set [here](#set-weighted-connections)
 + Pools are defined [here](#define-pools-in-network)
-+ Skip to an example of the network in action [here](#iac-in-action:-knowledge-retrieval-by-content-and-by-name). 
++ Skip to an example of the network in action [here](#iac-in-action-knowledge-retrieval-by-content-and-by-name). 
 
 
 ## The Code
