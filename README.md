@@ -29,37 +29,6 @@ Below, I present an implementation of the Jets and the Sharks network in R, with
 
 ## The Code
 
-#### Load packages
-
-```r
-# load packages
-library(dplyr)
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
-library(ggplot2)
-library(reshape2)
-library(knitr)
-library(kableExtra)
-```
-
 #### Set parameters
 
 ```r
