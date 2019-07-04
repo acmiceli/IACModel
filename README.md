@@ -2,7 +2,7 @@
 
 ## General Overview
 
-The present work provides an example of an Interactive Activation and Competition (IAC) model in action. Models such as this stem from the parallel-distributed processing (PDP) tradition and can offer mechanistic, biologically plausible accounts of psychological phenomena at an algorithmic level. The Jets and the Sharks model, here, provides a window into how knowledge retrieval might work.
+The present work provides an example of an Interactive Activation and Competition (IAC) model in action. Models such as this one stem from the parallel-distributed processing (PDP) tradition and can offer mechanistic, biologically plausible accounts of psychological phenomena at an algorithmic level. The Jets and the Sharks model, here, provides a window into how knowledge retrieval might work.
 
 ## The Network
 
@@ -12,19 +12,19 @@ Here's a diagram of the network:
 
 ![a1](images/jetsdiagram1.png)
 
-The figure presents a partial depiction of units and connections in the network. For example, we see that the unit Rick is connected via conjunction to the units corresponding to the features of burglar, 30s, divorced and high school. 
+The figure presents a partial depiction of units and connections in the network. For example, we see that the unit Rick is connected via conjunction to the units corresponding to the features of Shark, burglar, 30s, divorced, and high school. These are the features that are most strongly associated with Rick.
 
-For more details about this model, both in general and more specifically, see the [PDP Handbook](https://web.stanford.edu/group/pdplab/pdphandbook/handbookch3.html#x7-190002). 
+Below, I present an implementation of the Jets and the Sharks network in R, as well as some examples that demonstrate its inner workings.
 
-Below, I present an implementation of the Jets and the Sharks network in R, with some worked examples that demonstrate the inner workings of this IAC network.
- 
+For more details about this model, see the [PDP Handbook](https://web.stanford.edu/group/pdplab/pdphandbook/handbookch3.html#x7-190002). 
+
 ## Contents
 
 + Network parameters are set [here](#set-parameters)
 + Network-pertinent functions are defined [here](#define-functions)
 + Weighted connections between units are set [here](#set-weighted-connections)
 + Pools are defined [here](#define-pools-in-network)
-+ Skip to a worked example [here](#iac-in-action:-knowledge-retrieval-by-content-and-by-name). 
++ Skip to an example of the network in action [here](#iac-in-action:-knowledge-retrieval-by-content-and-by-name). 
 
 
 ## The Code
